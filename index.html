@@ -5,8 +5,17 @@
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
     <script src="app/lib/angular.min.js"></script>
   </head>
-  <body>
+  <body >
     <input type="text" ng-model="favColor" placeholder="Enter your favorite color." />
     <p> Your favorite color is: {{favColor}} </p>
+    <div ng-init="colors=['Red', 'Blue', 'Green', 'Yellow']">
+      <h1> Expressions Test: </h1>
+      <p>Is your favorite color {{colors[1]}} or {{colors[2]}} ? </p>
+    </div>
+
+    <div ng-init="color='orange'">
+      <h1>Expression test with Css</h1>
+      <p class="{{color}}">I'm Orange.</p>
+    </div>
   </body>
-</html>
+  </html>
