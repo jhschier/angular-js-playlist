@@ -17,5 +17,13 @@
       <h1>Expression test with Css</h1>
       <p class="{{color}}">I'm Orange.</p>
     </div>
+
+
+    <div ng-init="names=['Marcão', 'Jeremias', 'Aurélio', 'Ford Mustang Jr', 'Paulo']">
+      <h1>Expression test with ng-repeat</h1>
+      <ul>
+        <li ng-repeat="name in names">{{name}}</li>
+      </ul>
+    </div>
   </body>
   </html>
